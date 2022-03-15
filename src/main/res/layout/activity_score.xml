@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splash_screen"
+    android:orientation="vertical"
+    android:background="@drawable/gb_gradient_ungu"
+    tools:context=".SplashScreenActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6200EE"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extrabolditalic"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            tools:text="Quizzz!" />
+    </Toolbar>
+
+    <TextView
+        android:id="@+id/scoreAct_txtV_urScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Score!"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/montserrat_bolditalic"
+        android:textSize="30sp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+
+
+</RelativeLayout>

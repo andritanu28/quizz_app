@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#124699"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extrabolditalic"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            tools:text="Quizzz!" />
+    </Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPertama"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/kotakmyquiz"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/activityMain_relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="250dp">
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_circle_black_24dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/activityMain_txtV_myQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/activityMain_imgV_Profile"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="My Quizzz"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/activityMain_imgV_manPhone"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/tl"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/activityMain_txtV_letThe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activityMain_imgV_manPhone"
+            android:layout_marginTop="10dp"
+            android:text="Let the games begin!"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="98dp"/>
+
+        <Button
+            android:id="@+id/activityMain_btn_starQuiz"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/activityMain_txtV_letThe"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="8dp"
+            android:text="Start Quiz"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:background="@drawable/gb_normal_1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutKedua"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayoutPertama"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/squareorange"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/activityMain_relativeLayoutOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="280dp">
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_mathIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mathicon"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/activityMain_txtV_math"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/activityMain_imgV_mathIcon"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Math"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activityMain_linearLayoutOrange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityMain_relativeLayoutOrange"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotakquizmathnscience" >
+
+            <Button
+                android:id="@+id/actMain_btn_math1"
+                android:layout_width="117dp"
+                android:layout_height="141dp"
+                android:background="@drawable/btntransparant" />
+            
+            <ImageView
+                android:id="@+id/activityMain_imgV_mathImage"
+                android:layout_width="117dp"
+                android:layout_height="78dp"
+                android:src="@drawable/mathimg" />
+
+            <TextView
+                android:id="@+id/activityMain_txtV_Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_imgV_mathImage"
+                android:layout_marginLeft="5dp"
+                android:text="LEVEL 1"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/actMain_imgV_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/activityMain_txtV_Level"
+                android:src="@drawable/staryellow" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_txtV_Level"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/actMain_imgV_star"
+                android:text="3.5"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium" />
+
+                <TextView
+                    android:id="@+id/actMain_txtV_penjelasan"
+                    android:layout_width="107dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/actMain_imgV_star"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#8E8E8E"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="dsdsadsad dsadsa dasdsa dsadas dsad
+                        dasdsa dsasd asdsad dasdasd asdasd asdasdas "
+                    android:textSize="5sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activityMain_linearLayoutOrange2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityMain_relativeLayoutOrange"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/activityMain_linearLayoutOrange"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotakquizmathnscience" >
+
+            <Button
+                android:id="@+id/actMain_btn_math2"
+                android:layout_width="117dp"
+                android:layout_height="141dp"
+                android:background="@drawable/btntransparant" />
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_mathImage2"
+                android:layout_width="117dp"
+                android:layout_height="78dp"
+                android:src="@drawable/mathimg" />
+
+            <TextView
+                android:id="@+id/activityMain_txtV_Level2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_imgV_mathImage2"
+                android:layout_marginLeft="5dp"
+                android:text="LEVEL 2"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/actMain_imgV_star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/activityMain_txtV_Level2"
+                android:src="@drawable/staryellow" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_rating2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_txtV_Level2"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/actMain_imgV_star2"
+                android:text="4.0"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_penjelasan2"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actMain_imgV_star2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#8E8E8E"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="dsdsadsad dsadsa dasdsa dsadas dsad
+                        dasdsa dsasd asdsad dasdasd asdasd asdasdas "
+                android:textSize="5sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activityMain_linearLayoutOrange3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityMain_relativeLayoutOrange"
+            android:layout_toRightOf="@id/activityMain_linearLayoutOrange2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/kotakquizmathnscience" >
+
+            <Button
+                android:id="@+id/actMain_btn_math3"
+                android:layout_width="117dp"
+                android:layout_height="141dp"
+                android:background="@drawable/btntransparant" />
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_mathImage3"
+                android:layout_width="117dp"
+                android:layout_height="78dp"
+                android:src="@drawable/mathimg" />
+
+            <TextView
+                android:id="@+id/activityMain_txtV_Level3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_imgV_mathImage3"
+                android:layout_marginLeft="5dp"
+                android:text="LEVEL 3"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/actMain_imgV_star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/activityMain_txtV_Level3"
+                android:src="@drawable/staryellow" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_rating3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_txtV_Level3"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/actMain_imgV_star3"
+                android:text="4.2"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_penjelasan3"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actMain_imgV_star3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#8E8E8E"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="dsdsadsad dsadsa dasdsa dsadas dsad
+                        dasdsa dsasd asdsad dasdasd asdasd asdasdas "
+                android:textSize="5sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutKetiga"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayoutKedua"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/squarered"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/activityMain_relativeLayoutRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="280dp">
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_scienceIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scienceicon"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/activityMain_txtV_sciende"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/activityMain_imgV_scienceIcon"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="Science"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activityMain_linearLayoutRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityMain_relativeLayoutRed"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotakquizmathnscience" >
+
+            <Button
+                android:id="@+id/actMain_btn_science1"
+                android:layout_width="117dp"
+                android:layout_height="141dp"
+                android:background="@drawable/btntransparant" />
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_scienceImage"
+                android:layout_width="117dp"
+                android:layout_height="78dp"
+                android:src="@drawable/imagescience" />
+
+            <TextView
+                android:id="@+id/activityMain_txtV_LevelRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_imgV_scienceImage"
+                android:layout_marginLeft="5dp"
+                android:text="LEVEL 1"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/actMain_imgV_starRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/activityMain_txtV_LevelRed"
+                android:src="@drawable/staryellow" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_ratingRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_txtV_LevelRed"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/actMain_imgV_starRed"
+                android:text="3.0"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_penjelasanRed"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actMain_imgV_starRed"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#8E8E8E"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="dsdsadsad dsadsa dasdsa dsadas dsad
+                        dasdsa dsasd asdsad dasdasd asdasd asdasdas "
+                android:textSize="5sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activityMain_linearLayoutRed2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityMain_relativeLayoutRed"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/activityMain_linearLayoutRed"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/kotakquizmathnscience" >
+
+            <Button
+                android:id="@+id/actMain_btn_science2"
+                android:layout_width="117dp"
+                android:layout_height="141dp"
+                android:background="@drawable/btntransparant" />
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_scienceImage2"
+                android:layout_width="117dp"
+                android:layout_height="78dp"
+                android:src="@drawable/imagescience" />
+
+            <TextView
+                android:id="@+id/activityMain_txtV_LevelRed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_imgV_scienceImage2"
+                android:layout_marginLeft="5dp"
+                android:text="LEVEL 2"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/actMain_imgV_starRed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/activityMain_txtV_LevelRed2"
+                android:src="@drawable/staryellow" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_ratingRed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_txtV_LevelRed2"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/actMain_imgV_starRed2"
+                android:text="4.0"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_penjelasanRed2"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actMain_imgV_starRed2"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#8E8E8E"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="dsdsadsad dsadsa dasdsa dsadas dsad
+                        dasdsa dsasd asdsad dasdasd asdasd asdasdas "
+                android:textSize="5sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activityMain_linearLayoutRed3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityMain_relativeLayoutRed"
+            android:layout_toRightOf="@id/activityMain_linearLayoutRed2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/kotakquizmathnscience" >
+
+            <Button
+                android:id="@+id/actMain_btn_science3"
+                android:layout_width="117dp"
+                android:layout_height="141dp"
+                android:background="@drawable/btntransparant" />
+
+            <ImageView
+                android:id="@+id/activityMain_imgV_scienceImage3"
+                android:layout_width="117dp"
+                android:layout_height="78dp"
+                android:src="@drawable/imagescience" />
+
+            <TextView
+                android:id="@+id/activityMain_txtV_LevelRed3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_imgV_scienceImage3"
+                android:layout_marginLeft="5dp"
+                android:text="LEVEL 3"
+                android:textSize="11sp"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/actMain_imgV_starRed3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/activityMain_txtV_LevelRed3"
+                android:src="@drawable/staryellow" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_ratingRed3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMain_txtV_LevelRed3"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/actMain_imgV_starRed3"
+                android:text="4.5"
+                android:textSize="8sp"
+                android:fontFamily="@font/montserrat_medium" />
+
+            <TextView
+                android:id="@+id/actMain_txtV_penjelasanRed3"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/actMain_imgV_starRed3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#8E8E8E"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="dsdsadsad dsadsa dasdsa dsadas dsad
+                        dasdsa dsasd asdsad dasdasd asdasd asdasdas "
+                android:textSize="5sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
